@@ -14,13 +14,13 @@ Toast.makeText(getApplicationContext(), "Text Copyed", Toast.LENGTH_SHORT).show(
 
 ## Paste Text
 
-``
+```
 ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
 ClipData.Item item = clipboard.getPrimaryClip().getItemAt(0);
 textView.setText(item.getText().toString());
 
 Toast.makeText(getApplicationContext(), "Text Pasted", Toast.LENGTH_SHORT).show();
-``
+```
 
 ## Share Text
 
