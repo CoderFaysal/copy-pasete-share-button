@@ -12,6 +12,17 @@ clipboardManager.setPrimaryClip(clipData);
 Toast.makeText(getApplicationContext(), "Text Copyed", Toast.LENGTH_SHORT).show();
 ```
 
+## Copy Text In Fragment
+
+```
+ClipboardManager clipboardManager = (ClipboardManager) getContext().getSystemService(Context.CLIPBOARD_SERVICE);
+ClipData clipData = ClipData.newPlainText("TextView", editText.getText().toString());
+assert clipboardManager!= null;
+clipboardManager.setPrimaryClip(clipData);
+
+Toast.makeText(getContext(), "Text Copyed", Toast.LENGTH_SHORT).show();
+```
+
 ## Paste Text
 
 ```
